@@ -1,0 +1,28 @@
+<div class="container" style="margin-top: 10%;">
+    <div class="row">
+        <div class="col-lg-3">
+
+        </div>
+        <div class="col-lg-6" style="background-color: lightgrey; color:black;">
+            <h1 class="text-center">Register</h1>
+            <% if(message.length > 0) { %>
+                <div class="alert alert-danger"><%= message %></div> 
+               <% } %>
+            
+            <form action="/register" method="POST" class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Unesite email" class="form-control" required>
+                <br>
+                <label for="password">Sifra</label>
+                <input type="password" name="sifra" placeholder="Unesite sifru" class="form-control" required>
+                <br>
+                <button type="submit" class="btn btn-light" style="margin-left: 42%; margin-right: 45%;">Register</button>
+            </form>
+            <p class="text-center">Imate nalog ? <a href="/login">Ulogujte se </a></p>
+
+        </div>
+        <div class="col-lg-3">
+
+        </div>
+    </div>
+</div>
